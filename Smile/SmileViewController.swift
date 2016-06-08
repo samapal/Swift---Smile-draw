@@ -18,10 +18,40 @@ class SmileViewController: UIViewController {
         }
     }
     
+    @IBAction func openEyes(sender: UITapGestureRecognizer) {
+        if sender.state == .Ended {
+            switch expression.eyes {
+            case .Open:
+                expression.eyes = .Closed
+            case .Closed:
+                expression.eyes = .Open
+            case .Squinting:
+                break
+            }
+        }
+    }
     @IBOutlet weak var Smile: SmileView! {
         didSet{
+            Smile.addGestureRecognizer(
+                UIPinchGestureRecognizer(target: Smile, action: #selector(Smile.changeScale(_:)))
+                )
+            let happierSwipeGestureRecognizer = UISwipeGestureRecognizer(
+                target: self, action: #selector(SmileViewController.increaseHappiness))
+            happierSwipeGestureRecognizer.direction = .Up
+            Smile.addGestureRecognizer(happierSwipeGestureRecognizer)
+            
+            let sadSwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(SmileViewController.increaseSad))
+            sadSwipeGestureRecognizer.direction = .Down
+            Smile.addGestureRecognizer(sadSwipeGestureRecognizer)
             updateUI()
         }
+    }
+    
+    func increaseSad(){
+        expression.mouth = expression.mouth.sadderMouth()
+    }
+    func increaseHappiness(){
+       expression.mouth = expression.mouth.happierMouth()
     }
     
     private let mouthCurvatures = [smileExpression.Mouth.Frow:-1,

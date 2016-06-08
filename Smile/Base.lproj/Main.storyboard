@@ -17,6 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="eyeBrowTilt">
                                 <real key="value" value="-1"/>
@@ -29,12 +30,20 @@
                                 <real key="value" value="0.5"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iBB-4J-PDW" appends="YES" id="Q5H-pz-343"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="Smile" destination="8bC-Xf-vdC" id="SvG-gI-v0k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iBB-4J-PDW">
+                    <connections>
+                        <action selector="openEyes:" destination="BYZ-38-t0r" id="V6b-zD-Gf4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="263" y="399"/>
         </scene>
