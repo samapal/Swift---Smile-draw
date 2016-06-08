@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6B8304C81D07EC5600E3D50A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8304C71D07EC5600E3D50A /* AppDelegate.swift */; };
-		6B8304CA1D07EC5600E3D50A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8304C91D07EC5600E3D50A /* ViewController.swift */; };
+		6B8304CA1D07EC5600E3D50A /* SmileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8304C91D07EC5600E3D50A /* SmileViewController.swift */; };
 		6B8304CD1D07EC5700E3D50A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B8304CB1D07EC5700E3D50A /* Main.storyboard */; };
 		6B8304CF1D07EC5700E3D50A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8304CE1D07EC5700E3D50A /* Assets.xcassets */; };
 		6B8304D21D07EC5700E3D50A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B8304D01D07EC5700E3D50A /* LaunchScreen.storyboard */; };
 		6B8304DD1D07EC5700E3D50A /* SmileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8304DC1D07EC5700E3D50A /* SmileTests.swift */; };
 		6B8304E81D07EC5700E3D50A /* SmileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8304E71D07EC5700E3D50A /* SmileUITests.swift */; };
+		6B8304F71D07EE7300E3D50A /* SmileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8304F61D07EE7300E3D50A /* SmileView.swift */; };
+		6BF6FED61D0825A000A4D3BA /* SmileExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF6FED51D0825A000A4D3BA /* SmileExpression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		6B8304C41D07EC5500E3D50A /* Smile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8304C71D07EC5600E3D50A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6B8304C91D07EC5600E3D50A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B8304C91D07EC5600E3D50A /* SmileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileViewController.swift; sourceTree = "<group>"; };
 		6B8304CC1D07EC5700E3D50A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B8304CE1D07EC5700E3D50A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B8304D11D07EC5700E3D50A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		6B8304E31D07EC5700E3D50A /* SmileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8304E71D07EC5700E3D50A /* SmileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileUITests.swift; sourceTree = "<group>"; };
 		6B8304E91D07EC5700E3D50A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B8304F61D07EE7300E3D50A /* SmileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileView.swift; sourceTree = "<group>"; };
+		6BF6FED51D0825A000A4D3BA /* SmileExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileExpression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,11 @@
 		6B8304C61D07EC5500E3D50A /* Smile */ = {
 			isa = PBXGroup;
 			children = (
-				6B8304C71D07EC5600E3D50A /* AppDelegate.swift */,
-				6B8304C91D07EC5600E3D50A /* ViewController.swift */,
+				6B8304F51D07ECCB00E3D50A /* Supporting Files */,
+				6B8304C91D07EC5600E3D50A /* SmileViewController.swift */,
 				6B8304CB1D07EC5700E3D50A /* Main.storyboard */,
-				6B8304CE1D07EC5700E3D50A /* Assets.xcassets */,
-				6B8304D01D07EC5700E3D50A /* LaunchScreen.storyboard */,
-				6B8304D31D07EC5700E3D50A /* Info.plist */,
+				6B8304F61D07EE7300E3D50A /* SmileView.swift */,
+				6BF6FED51D0825A000A4D3BA /* SmileExpression.swift */,
 			);
 			path = Smile;
 			sourceTree = "<group>";
@@ -123,6 +126,17 @@
 				6B8304E91D07EC5700E3D50A /* Info.plist */,
 			);
 			path = SmileUITests;
+			sourceTree = "<group>";
+		};
+		6B8304F51D07ECCB00E3D50A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B8304C71D07EC5600E3D50A /* AppDelegate.swift */,
+				6B8304CE1D07EC5700E3D50A /* Assets.xcassets */,
+				6B8304D01D07EC5700E3D50A /* LaunchScreen.storyboard */,
+				6B8304D31D07EC5700E3D50A /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +207,7 @@
 				TargetAttributes = {
 					6B8304C31D07EC5500E3D50A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = A8C5X9HEK5;
+						DevelopmentTeam = 8L78N3CN94;
 					};
 					6B8304D71D07EC5700E3D50A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -259,7 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B8304CA1D07EC5600E3D50A /* ViewController.swift in Sources */,
+				6B8304CA1D07EC5600E3D50A /* SmileViewController.swift in Sources */,
+				6B8304F71D07EE7300E3D50A /* SmileView.swift in Sources */,
+				6BF6FED61D0825A000A4D3BA /* SmileExpression.swift in Sources */,
 				6B8304C81D07EC5600E3D50A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,10 +421,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Smile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nzsm.Smile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -417,10 +435,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Smile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nzsm.Smile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -489,6 +509,7 @@
 				6B8304EE1D07EC5700E3D50A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B8304EF1D07EC5700E3D50A /* Build configuration list for PBXNativeTarget "SmileTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +518,7 @@
 				6B8304F11D07EC5700E3D50A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B8304F21D07EC5700E3D50A /* Build configuration list for PBXNativeTarget "SmileUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +527,7 @@
 				6B8304F41D07EC5700E3D50A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
